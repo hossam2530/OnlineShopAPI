@@ -1,0 +1,50 @@
+{
+  "name": "online-store-api",
+  "version": "1.0.0",
+  "description": "Online Store backend API that is used for some crud operation on the products, orders and users ",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "prettier": "prettier --write --config .prettierrc src",
+    "lint": "eslint src/**/*.ts",
+    "lint-fix": "eslint src/**/*.ts --fix",
+    "build": "npx tsc",
+    "jasmine": "jasmine",
+    "test": "set NODE_ENV=test&& db-migrate -e test reset && npm run build && db-migrate -e test up && jasmine",
+    "start-server": "npm run build && node dist/index.js",
+    "start": "nodemon src/index.ts"
+  },
+  "author": "Hossam Moussa",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/express": "^4.17.15",
+    "@types/jasmine": "^4.3.1",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/node": "^18.11.17",
+    "@types/pg": "^8.6.6",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.1",
+    "ts-node": "^10.9.1",
+    "typedoc": "^0.23.24",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "db-migrate": "^0.11.13",
+    "db-migrate-pg": "^1.2.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jasmine": "^4.5.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "pg": "^8.8.0",
+    "supertest": "^6.3.3"
+  }
+}

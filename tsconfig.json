@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "lib": ["ES6", "DOM"],
+    "target": "ES5",
+    "module": "CommonJS",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+  },"exclude": [
+    "./dist", "node_modules" , "spec", "migrations"
+  ]
+}

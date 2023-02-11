@@ -1,0 +1,21 @@
+{
+    "env": {
+        "commonjs": true,
+        "es2021": true
+    },
+    "overrides": [
+    ],
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],    
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 6
+    },    
+    "rules": {
+    }
+}
